@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fiebr111.github.io/suvenirnie-prava/sitemap.xml
