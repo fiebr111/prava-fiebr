@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>СувенирныеПраваФибр</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+    
+    :root {
+      --primary: #1a56db;
+      --primary-hover: #1648b8;
+      --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+    }
+    
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: var(--bg-gradient);
+      color: #111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      min-height: 100vh;
+      text-align: center;
+      position: relative;
+      overflow-x: hidden;
+    }
+    
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('suvenirnie_prava.png') center/cover no-repeat;
+      opacity: 0.03;
+      z-index: -1;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+      color: #1a365d;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+      margin-bottom: 1.5em;
+      color: #2d3748;
+      font-weight: 500;
+    }
+
+    .btn {
+      background-color: var(--primary);
+      color: white;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    .btn:hover {
+      background-color: var(--primary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-preview {
+      margin: 2em 0;
+      max-width: 100%;
+      width: 420px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+      border: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .card-preview:hover {
+      transform: scale(1.02);
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 2em;
+      }
+      
+      .subtitle {
+        font-size: 1em;
+      }
+
+      .btn {
+        width: 100%;
+        padding: 12px 24px;
+      }
+      
+      .card-preview {
+        width: 320px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>СувенирныеПраваФибр</h1>
+  <p class="subtitle">Сувенирные удостоверения</p>
+
+  <a href="https://t.me/perehodfiebr" class="btn" target="_blank">Перейти в Telegram</a>
+
+  <img src="suvenirnie_prava.png" alt="Сувенирные права РФ" class="card-preview" />
+
+</body>
+</html>
